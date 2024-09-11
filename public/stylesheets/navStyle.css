@@ -1,0 +1,21 @@
+
+
+.utits{
+   margin: 0 4px;
+   font-size: 20px;
+   padding: 3px;
+}
+
+.utits a{
+    text-decoration: none;
+    color: rgb(211, 31, 31);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(211, 31, 31);
+    font-size: 17px;
+}
+.utits a:hover{
+    color: white;
+    background-color: red;
+}

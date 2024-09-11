@@ -1,0 +1,94 @@
+.contain{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    gap: 1rem;
+}
+
+.con-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con-item p{
+   font-size: 1.5rem;
+}
+.card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-form input{
+    padding: 3px 8px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.card-form textarea{
+    padding: 3px 8px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.card-form #post{
+   width: 30%;
+   background-color:rgb(54, 177, 54);
+   color: white;
+   font-weight: bolder;
+   letter-spacing: 0.1em;
+}
+
+.blogs-items{
+    width: 75%;
+    margin: 2rem auto;
+}
+.blog-item{
+    padding: 2px 4px;
+    border: 1px solid gray;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.blog-img{
+    overflow: hidden;
+    width: 13rem;
+    height: 14rem;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-info p a{
+    text-decoration: none;
+    color: gray;
+}
+.blog-info .updating{
+    display: flex;
+    gap: 1rem;
+}
+.blog-info .updating a:nth-child(1){
+    text-decoration: none;
+    background-color: rgb(98, 92, 92);
+    padding: 3px 10px;
+    color: yellow;
+    border-radius: 8px;
+
+}
+.blog-info .updating a:nth-child(2){
+    text-decoration: none;
+    background-color: rgb(126, 193, 60);
+    padding: 3px 10px;
+    color: red;
+    border-radius: 8px;
+
+}

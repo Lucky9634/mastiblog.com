@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 7rem;
+}
+.container h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.loginForm{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    flex-direction: column;
+}
+.loginForm input{
+   padding: 4px 3px;
+   cursor: pointer;
+}
+.formItems{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+.formItems input{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 4px;
+}
+.formItems input:hover{
+    box-shadow: 0 0 35px black;
+}
+.loginForm a{
+    margin-bottom: 5px;
+    color: gray;
+}

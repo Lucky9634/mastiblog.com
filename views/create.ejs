@@ -1,0 +1,17 @@
+<%- include('./partials/hearder.ejs') %>
+    <div class="container">
+        <h1>Welcome To The Masti Blogs</h1>
+        <form action="/home/user/create" method="post" class="loginForm">
+            <input type="text" name="name" id="" placeholder="Name">
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="password" name="password" id="" placeholder="Password">
+            <input type="password" name="conPassword" id="" placeholder="Conform Password">
+            <div class="formItems">
+                <input type="submit" value="Create">
+                <a href="/home/login">I have an already acoount..!</a>
+            </div>
+        </form>
+
+    </div>
+
+    <%- include('./partials/footer.ejs') %>

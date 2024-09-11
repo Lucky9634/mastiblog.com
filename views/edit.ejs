@@ -1,0 +1,22 @@
+<%- include("./partials/hearder.ejs") %>
+
+    <div class="editForm">
+        <div class="contain">
+            <div class="con-item">
+                <h4>Update Your Post.</h4>
+                <p>Write Your Beuatifull And Attractive Blog And like All People.</p>
+            </div>
+            <form class="card-form" action="/blogs/post/edit/<%= post._id %>" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" id="image" placeholder="Select File.." value=" <%= post.image %>">
+                <input type="text" name="title" placeholder="Enter The Title.." value="<%= post.title %>">
+                <textarea name="content" id="content" placeholder="Write Your Blog Here.."
+                    cols="10" rows="8"><%= post.content %></textarea>
+                <input id="post" type="submit" value="Update">
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <%- include("./partials/footer.ejs") %>

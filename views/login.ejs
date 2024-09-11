@@ -1,0 +1,15 @@
+<%- include('./partials/hearder.ejs') %>
+    <div class="container">
+        <h1>Welcome To The Masti Blogs</h1>
+        <form action="/home/login" method="post" class="loginForm">
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="password" name="password" id="" placeholder="Password">
+            <div class="formItems">
+                <input type="submit" value="Login">
+                <a href="/home/create">Create Account</a>
+            </div>
+        </form>
+
+    </div>
+
+    <%- include('./partials/footer.ejs') %>

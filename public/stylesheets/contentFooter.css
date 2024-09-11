@@ -1,0 +1,32 @@
+.contentFooter{
+    display: flex;
+    border-top: 1px solid gray;
+    padding: 4rem 0;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.row-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.items{
+    text-align: left;
+    justify-content: flex-start;
+}
+.items h5{
+    margin-left: 2rem;
+}
+.item{
+    list-style: none;
+}
+.footerLine{
+    display: flex;
+    background-color: #E9ECEF;
+    gap: 2px;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.footerLine p:nth-last-child(){
+   margin-bottom: -0.7rem;
+}

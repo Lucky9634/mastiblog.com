@@ -1,0 +1,29 @@
+<%- include ('./partials/hearder.ejs')%>
+
+  <div class="hearding">
+    <h2>Wellcome To The Blogs</h2>
+    <p>Here All Post Available To Read and Get The Excellent To Learn Knowledge. Some Blog Related To The Online Make Money And Earning Types.</p>
+  </div>
+  <header class="cards">
+    <% posts.forEach((post)=>{ %>
+      <div class="card" style="width: 17rem;">
+
+        <img src="data:image/jpeg;base64,<%= post.image.toString('base64') %>" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= post.title %>
+          </h5>
+          <p class="card-text"><%= post.content.slice(0, 50) %>...  </p>
+          <div class="cart-btn">
+            <a href="/home/card/<%= post._id %>" class="btn btn-primary ">Read More...</a>
+          </div>
+        </div>
+      </div>
+      <%})%>
+        </div>
+
+  </header>
+
+
+
+  <%- include("./partials/footer.ejs")%>

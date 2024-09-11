@@ -1,0 +1,46 @@
+<%- include("./partials/hearder.ejs") %>
+
+    <main>
+        <div class="contain">
+            <div class="con-item">
+                <h4>Welcome To The <%= user.name %>.</h4>
+                <p>Write Your Beuatifull And Attractive Blog And like All People.</p>
+            </div>
+            <form class="card-form" action="/blogs/post" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" id="image" placeholder="Select File..">
+                <input type="text" name="title" placeholder="Enter The Title..">
+                <textarea name="content" id="content" placeholder="Write Your Blog Here.." cols="10"
+                    rows="8"></textarea>
+                <input id="post" type="submit" value="Post">
+            </form>
+        </div>
+
+        <div class="blogs-items">
+
+            <% user.posts.forEach((item)=>{ %>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="data:image/jpeg;base64,<%= item.image.toString('base64') %>" alt="loading...">
+                    </div>
+                    <div class="blog-info">
+                        <h6>
+                            <%= item.title %>
+                        </h6>
+                        <p>
+                            <%= item.content.slice(0, 60) %>... <a href="/home/user/post/<%= item._id %>">Read More</a>
+                        </p>
+                        <p>0<a href=""> Like</a></p>
+                        <div class="updating"><a href="/blogs/edit/<%= item._id %>">Edit</a> <a
+                                href="/blogs/delete/<%= item._id %>">Delete</a></div>
+                    </div>
+                </div>
+                <% })%>
+
+
+        </div>
+    </main>
+
+
+
+
+    <%- include("./partials/footer.ejs") %>

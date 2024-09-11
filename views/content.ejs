@@ -1,0 +1,20 @@
+<%- include('./partials/hearder.ejs')%>
+
+    <div class="simple">
+        <div class="simple-img">
+            <img src="data:image/jpeg;base64,<%= post.image.toString('base64') %>" alt="loading.....">
+        </div>
+        <div class="simple-items">
+            <h5><%= post.title %></h5>
+            <p>@<%= post.date %></p>
+        </div>
+        <p><%= post.content %></p>
+        <div class="simple-time">
+            <h6>2 <a href="">Like</a></h6>
+            <p>Last Update 3 mins ago</p>
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/footer.ejs')%>
